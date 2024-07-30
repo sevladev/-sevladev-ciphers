@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "jest --watch",
+    "test:dev": "jest --watch",
+    "test": "jest",
     "build": "tsc"
   },
   "keywords": [],
