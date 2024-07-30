@@ -19,7 +19,7 @@ npm install @sevladev/ciphers
 
 Here is examples of how to use all ciphers in your application:
 
-### Encoding and Decoding with Caesar Cipher
+### Caesar Cipher
 
 ```js
 import { caesarCipher } from "@sevladev/ciphers";
@@ -36,7 +36,7 @@ const decodedText = caesarCipher(encodedText, -salt).decode();
 console.log(`Decoded Text: ${decodedText}`); // Output: Hello, World! 123
 ```
 
-### Encoding and Decoding with Vigenère Cipher
+### Vigenère Cipher
 
 ```js
 import { vigenereCipher } from "@sevladev/ciphers";
