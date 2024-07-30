@@ -19,9 +19,6 @@ jobs:
           node-version: "16"
           cache: "npm"
 
-      - name: Install dependencies
-        run: npm install
-
       - name: Build the project
         run: npm run build
 
@@ -30,3 +27,8 @@ jobs:
 
       - name: Publish to npm
         run: npm publish
+
+      - name: Publish to GitHub Packages
+        run: npm publish --registry=https://npm.pkg.github.com/
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

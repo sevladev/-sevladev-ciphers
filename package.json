@@ -1,11 +1,12 @@
 {
   "name": "@sevladev/ciphers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "jest --watch",
+    "test:dev": "jest --watch",
+    "test": "jest",
     "build": "tsc"
   },
   "keywords": [],
