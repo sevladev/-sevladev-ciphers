@@ -25,6 +25,9 @@ jobs:
       - name: Run tests
         run: npm test
 
+      - name: List test-results directory
+        run: ls -la test-results
+
       - name: Upload test results
         uses: actions/upload-artifact@v2
         with:

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="45" failures="0" errors="0" time="1.808">
+  <testsuite name="CaesarCipher" errors="0" failures="0" skipped="0" timestamp="2024-07-30T13:27:42" time="1.643" tests="8">
+    <testcase classname="CaesarCipher encode should encode lowercase letters correctly" name="CaesarCipher encode should encode lowercase letters correctly" time="0.002">
+    </testcase>
+    <testcase classname="CaesarCipher encode should encode uppercase letters correctly" name="CaesarCipher encode should encode uppercase letters correctly" time="0">
+    </testcase>
+    <testcase classname="CaesarCipher encode should handle non-alphabet characters correctly" name="CaesarCipher encode should handle non-alphabet characters correctly" time="0">
+    </testcase>
+    <testcase classname="CaesarCipher encode should handle shifts larger than 26 correctly" name="CaesarCipher encode should handle shifts larger than 26 correctly" time="0">
+    </testcase>
+    <testcase classname="CaesarCipher decode should decode lowercase letters correctly" name="CaesarCipher decode should decode lowercase letters correctly" time="0">
+    </testcase>
+    <testcase classname="CaesarCipher decode should decode uppercase letters correctly" name="CaesarCipher decode should decode uppercase letters correctly" time="0.001">
+    </testcase>
+    <testcase classname="CaesarCipher decode should handle non-alphabet characters correctly" name="CaesarCipher decode should handle non-alphabet characters correctly" time="0">
+    </testcase>
+    <testcase classname="CaesarCipher decode should handle shifts larger than 26 correctly" name="CaesarCipher decode should handle shifts larger than 26 correctly" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="AlbertiCipher" errors="0" failures="0" skipped="0" timestamp="2024-07-30T13:27:42" time="1.65" tests="8">
+    <testcase classname="AlbertiCipher basic encoding" name="AlbertiCipher basic encoding" time="0.002">
+    </testcase>
+    <testcase classname="AlbertiCipher basic decoding" name="AlbertiCipher basic decoding" time="0.001">
+    </testcase>
+    <testcase classname="AlbertiCipher encoding with mixed case and non-alphabetic characters" name="AlbertiCipher encoding with mixed case and non-alphabetic characters" time="0">
+    </testcase>
+    <testcase classname="AlbertiCipher decoding with mixed case and non-alphabetic characters" name="AlbertiCipher decoding with mixed case and non-alphabetic characters" time="0">
+    </testcase>
+    <testcase classname="AlbertiCipher encoding with different initial position" name="AlbertiCipher encoding with different initial position" time="0">
+    </testcase>
+    <testcase classname="AlbertiCipher decoding with different initial position" name="AlbertiCipher decoding with different initial position" time="0">
+    </testcase>
+    <testcase classname="AlbertiCipher encoding with empty text" name="AlbertiCipher encoding with empty text" time="0.004">
+    </testcase>
+    <testcase classname="AlbertiCipher decoding with empty text" name="AlbertiCipher decoding with empty text" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="VigenereCipher" errors="0" failures="0" skipped="0" timestamp="2024-07-30T13:27:42" time="1.645" tests="17">
+    <testcase classname="VigenereCipher basic encoding" name="VigenereCipher basic encoding" time="0.002">
+    </testcase>
+    <testcase classname="VigenereCipher basic decoding" name="VigenereCipher basic decoding" time="0">
+    </testcase>
+    <testcase classname="VigenereCipher encoding with mixed case and non-alphabetic characters" name="VigenereCipher encoding with mixed case and non-alphabetic characters" time="0">
+    </testcase>
+    <testcase classname="VigenereCipher decoding with mixed case and non-alphabetic characters" name="VigenereCipher decoding with mixed case and non-alphabetic characters" time="0">
+    </testcase>
+    <testcase classname="VigenereCipher encoding with long secret" name="VigenereCipher encoding with long secret" time="0">
+    </testcase>
+    <testcase classname="VigenereCipher decoding with long secret" name="VigenereCipher decoding with long secret" time="0.001">
+    </testcase>
+    <testcase classname="VigenereCipher encoding with short secret repeated" name="VigenereCipher encoding with short secret repeated" time="0">
+    </testcase>
+    <testcase classname="VigenereCipher decoding with short secret repeated" name="VigenereCipher decoding with short secret repeated" time="0">
+    </testcase>
+    <testcase classname="VigenereCipher encoding with empty text" name="VigenereCipher encoding with empty text" time="0.017">
+    </testcase>
+    <testcase classname="VigenereCipher decoding with empty text" name="VigenereCipher decoding with empty text" time="0.001">
+    </testcase>
+    <testcase classname="VigenereCipher encoding with empty secret" name="VigenereCipher encoding with empty secret" time="0">
+    </testcase>
+    <testcase classname="VigenereCipher decoding with empty secret" name="VigenereCipher decoding with empty secret" time="0">
+    </testcase>
+    <testcase classname="VigenereCipher encoding with spaces in text" name="VigenereCipher encoding with spaces in text" time="0">
+    </testcase>
+    <testcase classname="VigenereCipher decoding with spaces in text" name="VigenereCipher decoding with spaces in text" time="0">
+    </testcase>
+    <testcase classname="VigenereCipher encoding with numbers in text" name="VigenereCipher encoding with numbers in text" time="0">
+    </testcase>
+    <testcase classname="VigenereCipher decoding with numbers in text" name="VigenereCipher decoding with numbers in text" time="0">
+    </testcase>
+    <testcase classname="VigenereCipher encoding and decoding with same secret and text" name="VigenereCipher encoding and decoding with same secret and text" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="AtbashCipher" errors="0" failures="0" skipped="0" timestamp="2024-07-30T13:27:42" time="1.655" tests="4">
+    <testcase classname="AtbashCipher should be a simple enconding" name="AtbashCipher should be a simple enconding" time="0.002">
+    </testcase>
+    <testcase classname="AtbashCipher should be a simple decoding" name="AtbashCipher should be a simple decoding" time="0">
+    </testcase>
+    <testcase classname="AtbashCipher should be a simple enconding with numbers in string" name="AtbashCipher should be a simple enconding with numbers in string" time="0">
+    </testcase>
+    <testcase classname="AtbashCipher should be a simple decoding with numbers in string" name="AtbashCipher should be a simple decoding with numbers in string" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="PlayfairCipher" errors="0" failures="0" skipped="0" timestamp="2024-07-30T13:27:42" time="1.666" tests="8">
+    <testcase classname="PlayfairCipher should encode simple text" name="PlayfairCipher should encode simple text" time="0.004">
+    </testcase>
+    <testcase classname="PlayfairCipher should decode simple text" name="PlayfairCipher should decode simple text" time="0">
+    </testcase>
+    <testcase classname="PlayfairCipher should encode text with numbers" name="PlayfairCipher should encode text with numbers" time="0">
+    </testcase>
+    <testcase classname="PlayfairCipher should decode text with numbers" name="PlayfairCipher should decode text with numbers" time="0">
+    </testcase>
+    <testcase classname="PlayfairCipher should encode text with mixed case and punctuation" name="PlayfairCipher should encode text with mixed case and punctuation" time="0.001">
+    </testcase>
+    <testcase classname="PlayfairCipher should decode text with mixed case and punctuation" name="PlayfairCipher should decode text with mixed case and punctuation" time="0">
+    </testcase>
+    <testcase classname="PlayfairCipher should encode text with repeated characters" name="PlayfairCipher should encode text with repeated characters" time="0">
+    </testcase>
+    <testcase classname="PlayfairCipher should decode text with repeated characters" name="PlayfairCipher should decode text with repeated characters" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>
