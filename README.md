@@ -8,6 +8,8 @@ A collection of ciphers.
    - The Vigenère Cipher is a more complex polyalphabetic substitution cipher that uses a keyword to determine the shift for each letter in the plaintext. Each letter of the keyword shifts the corresponding letter in the plaintext by its position in the alphabet. For example, with the keyword “KEY”, ‘A’ would be replaced by ‘K’, ‘B’ would become ‘F’ (shifted by ‘E’), and so on. The same process is applied in reverse for decoding, using the keyword to shift letters back to their original positions.​
 3. **Atbash Cipher**
    - The Atbash Cipher is a classic substitution cipher where each letter of the alphabet is mapped to its reverse. This means that ‘A’ is substituted with ‘Z’, ‘B’ with ‘Y’, ‘C’ with ‘X’, and so on. It is a simple and ancient encryption technique, and it is a symmetric cipher, meaning that the same algorithm is used for both encryption and decryption.
+4. **Alberti Cipher**
+   - The Alberti Cipher, invented by Leon Battista Alberti in the 15th century, is one of the earliest polyalphabetic ciphers. It uses two concentric disks to encrypt messages. The outer disk is fixed with a standard alphabet, while the inner disk is movable and can be rotated to create different substitution alphabets. By aligning the disks to a starting position and rotating the inner disk after a certain number of characters, the cipher provides a more secure encryption method than simple substitution ciphers. The same process is applied in reverse for decoding.
 
 ## Installation
 
@@ -65,5 +67,20 @@ const encodedText = atbashCipher(str).encode();
 console.log(`Encoded Text: ${encodedText}`); // Output: Svool Dliow!
 
 const decodedText = atbashCipher(encodedText).decode();
+console.log(`Decoded Text: ${encodedText}`); // Output: Hello, World!
+```
+
+### Alberti Cipher
+
+```js
+import { albertiCipher } from "@sevladev/ciphers";
+
+const str = "Hello, World!";
+const initialPosition = 3;
+
+const encodedText = albertiCipher(str, initialPosition).encode();
+console.log(`Encoded Text: ${encodedText}`); // Output: Aufgl, Pmyld!
+
+const decodedText = albertiCipher(encodedText).decode();
 console.log(`Decoded Text: ${encodedText}`); // Output: Hello, World!
 ```
