@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test:dev": "jest --watch",
-    "test": "jest --reporters=default --reporters=jest-github-actions-reporter --outputFile=jest-github-actions-reporter.xml",
+    "test": "jest --reporters=default --reporters=jest-junit",
     "build": "tsc"
   },
   "keywords": [],
