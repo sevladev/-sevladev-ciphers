@@ -1,4 +1,4 @@
-import { vigenereCipher } from "../ciphers/vigenere-cipher";
+import { vigenereCipher } from "../index";
 
 describe("VigenereCipher", () => {
   test("basic encoding", () => {
