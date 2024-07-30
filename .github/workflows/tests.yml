@@ -24,20 +24,3 @@ jobs:
 
       - name: Run tests
         run: npm test
-
-      - name: List test-results directory
-        run: ls -la test-results
-
-      - name: Upload test results
-        uses: actions/upload-artifact@v2
-        with:
-          name: test-results
-          path: test-results
-
-      - name: Test Reporter
-        uses: dorny/test-reporter@v1
-        if: always()
-        with:
-          name: jest tests
-          path: test-results/junit.xml
-          reporter: jest-junit
