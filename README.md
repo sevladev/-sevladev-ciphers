@@ -31,11 +31,11 @@ const salt = 3;
 
 // Encode the text
 const encodedText = caesarCipher(str, salt).encode();
-console.log(`Encoded Text: ${encodedText}`); // Output: Khoor, Zruog! 123
+console.log(`Encoded Text: ${encodedText}`); // Output: Khoor, Zruog!
 
 // Decode the text
-const decodedText = caesarCipher(encodedText, -salt).decode();
-console.log(`Decoded Text: ${decodedText}`); // Output: Hello, World! 123
+const decodedText = caesarCipher(encodedText, salt).decode();
+console.log(`Decoded Text: ${decodedText}`); // Output: Hello, World!
 ```
 
 ### Vigenère Cipher
